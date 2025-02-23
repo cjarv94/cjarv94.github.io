@@ -1,22 +1,21 @@
 body {
 	margin: 0;
+	background: black;
 }
 
 #container {
 	position: absolute;
 	width: 100vw;
-	height: 100vh;
-	background: black;
+	max-height: 100vh;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	aspect-ratio: 16 / 9;
 }
 
 video#camera-output {
 	background: none;
-	width: 100vw;
-	height: 100vh;
-	aspect-ratio: 16 / 9;
 	flex: 1;
+	object-fit: fill;
 }
